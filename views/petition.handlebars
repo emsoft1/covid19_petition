@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" > 
+</head>
+<body>
+      {{> header}}
+    {{{body}}}
+    <h2>Please sign here to show your appreciation !!!!!!!!</h2>
+    <h4 id="err">{{err}}</h4>
+    <form  method="POST">
+        <canvas width="400" height="200" id="canvas"  ></canvas>
+        <input type="submit" value="Submit" id="submit">
+         <input type="text" name="canr" style="visibility: hidden;" id="canr"  >
+        <input type="hidden" name="canvasurl" style="visibility: hidden;" id="canvasurl" >
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" > 
+</head>
+<body>
+    {{> headersin}}
+    {{{body}}}
+    <h2>for helping our helper please signup here and let us to inform them that they are not alone !!!</h2>
+     <h4 id="err">{{err}}</h4>
+    <form  method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="last" placeholder="Last name " required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="pass" placeholder="Password" required > 
+        <input type="password" name="pass-com" placeholder="Comfirm the password" required > 
+       <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input type="submit" value="submit" >
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petiton</title>
+    <link rel="shortcut icon" href="./face-mask.png" />
+     <link rel="stylesheet" href="styles.css" > 
+</head>
+<body><div id="main">
+    <div id="baner">
+    <h1 > Helps the Helpers</h1>
+    </div>
+   <img src="./pic3.jpg" alt="" id="back" style="filter: blur(4px);">
+   {{!-- <div id="shado"></div> --}}
+    <div id="back">
+        <div class="cu" id="cy1"><h4 class="ph">total cases <br>{{data.total_cases}}</h4><img src="./pic5.jpg" alt="" id="pi1" ></div>
+        <div class="cu" id="cy2"><h4 class="ph">recovery cases <br>{{data.recovery_cases}}</h4> <img src="./pic5.jpg" alt="" id="pi1" ></div>
+        <div class="cu" id="cy3"><h4 class="ph">closed_cases recovered percentage <br>{{data.closed_cases_recovered_percentage}}%</h4><img src="./pic5.jpg" alt="" id="pi1" ></div>
+        <div class="cu" id="cy4"><h4 class="ph">currently infected <br>{{data.currently_infected}}</h4><img src="./pic5.jpg" alt="" id="pi1" ></div>
+    </div>
+    <img src="./face-mask.png" alt="" id="logo">
+    {{{body}}}
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./scriptmain.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{> headersin}}
+    <h2>For helping our helper please login here and let us inform them that they are not alone !!!</h2>
+     <h4 id="err">{{err}}</h4>
+    <form action="" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="pass" placeholder="Password" required > 
+           <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input type="submit" value="Login">
+ 
+    </form>
+</body>
+</html>

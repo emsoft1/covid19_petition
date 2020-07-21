@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    font-family: monospace;
+}
+body {
+    background-color: #17bbb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#baner {
+    width: 100%;
+    background-color: rgba(210, 212, 256, 40%);
+}
+#picb {
+    filter: blur(4px);
+}
+h1 {
+    margin: 20px;
+    color: #f57e20;
+}
+#headers a {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: red;
+    background-color: rgba(53, 208, 186, 70%);
+    margin: 20px;
+    padding: 10px;
+    color: #d92027;
+    font-size: 1.3em;
+}
+li {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: red;
+    background-color: rgba(53, 208, 186, 30%);
+    margin: 20px;
+    padding: 20px, 0;
+    color: #d92027;
+}
+h1,
+h2,
+h3,
+a {
+    background-color: rgba(53, 208, 186, 35%);
+    margin: 20px;
+    padding: 10px, 0;
+    color: #d92027;
+}
+#logo {
+    height: 200px;
+}
+#err {
+    color: red;
+}
+#main {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(256, 256, 256, 40%);
+}
+.butt {
+    width: 100px;
+    height: 30px;
+}
+canvas {
+    border: 2px, black, dotted;
+    background-color: #fada1b;
+}
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input {
+    height: 30px;
+    width: 200px;
+    margin: 10px;
+}
+#shado {
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    background-color: rgba(150, 150, 150, 20%);
+    position: fixed;
+}
+
+ul,
+li {
+    margin: 5px;
+    font-size: 1.1em;
+    color: #f57e20;
+    list-style: none;
+}
+a,
+#log {
+    display: inline;
+}
+#header {
+    display: inline;
+}
+#back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+#bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1002;
+}
+.cu {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #f57e20;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s ease-in-out;
+    overflow: hidden;
+}
+
+.pc {
+    position: relative;
+}
+.ph {
+    position: absolute;
+    padding: 100px;
+    background-color: rgba(256, 256, 256, 60%);
+}
+#pi1 {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    z-index: -1;
+}

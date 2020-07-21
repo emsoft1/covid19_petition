@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our helpers</title>
+       <link rel="stylesheet" href="styles.css" > 
+</head>
+<body>
+    {{> header}}
+    {{{body}}}
+   <h3>this is our friends that help us in these crises. </h3> 
+
+   <h4>
+       <ul>
+       {{#each names}}
+       <li> 
+           
+           {{#if url}}
+            
+           <a href="{{url}}"> {{this.name}} {{this.last}} </a>
+           
+           {{else}}
+           {{this.name}} {{this.last}}
+           {{/if}}
+           {{this.age}} <a href="/signerscity:{{this.city}}">{{this.city}}</a>
+                      </li>
+       {{/each}}
+       </ul>
+   </h4>
+</body>
+</html>

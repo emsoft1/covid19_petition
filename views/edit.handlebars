@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" > 
+</head>
+<body>  
+    {{> header}}
+    {{{body}}}
+    <div id="main">
+    <h2>We would be happy if can get more information from you !!!</h2>
+     <h4 id="err">{{err}}</h4>
+    <div id="main">
+        <img src="{{db.sign}}" alt="">
+        {{!-- <p>{{sing}}</p> --}}
+        </div>
+      <a href="/delets"> <input type="button" value="Delete the Sign"></a> 
+    <form  method="POST">
+        <input type="text" name="name" placeholder="Name" value={{db.name}} required >
+        <input type="text" name="last" placeholder="Last" value={{db.last}} required>
+        <input type="email" name="email" placeholder="Email" value={{db.email}} required >
+        <input type="text" name="city" placeholder="City"  value={{db.city}} >
+        <input type="number" name="age" placeholder="Age" value={{db.age}} >
+        <input type="url" name="url" placeholder="Url" value={{db.url}} >
+        <input type="password" name='old-pass' placeholder="Old Password">
+        <input type="password" name='new-pass' placeholder="New Password">
+       <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input type="submit" value="Submit" >
+
+        <a href="/deleta"> <input type="button" value="Delete Accunt"></a> 
+    
+    </form>
+    </div>
+</body>
+</html>
